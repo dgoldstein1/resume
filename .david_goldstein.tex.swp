@@ -97,13 +97,13 @@
       {Software Engineer}{May 2017 - Present}
       \resumeItemListStart
         \resumeItem{Microservices}
-          {}
+          {built individual ``building block" services focusing on doing specific tasks well, giving our system architecture flexibility and support, and also decreasing unplanned downtime and server maintenance costs. }
         \resumeItem{Performance}
-          {}
+          {lead efforts to optimize and test load times with web-based applications, data aggregation, and database retrieval.}
         \resumeItem{Leadership}
-          {}
+          {mentored and lead a 5-person team on a fast-paced project, including meeting with customers, listening and getting feedback from end users, and holding bi-weekly with each member of the team.}
 	     \resumeItem{Testing}
-          {}
+          {created an integration test framework and user interface for any swagger API, which is now used throughout the company. Gave presentations on different testing techniqutes and built a testing tutorial for new hires.}
       \resumeItemListEnd
 
     \resumeSubheading
