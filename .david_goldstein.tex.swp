@@ -103,21 +103,21 @@
         \resumeItem{Leadership}
           {mentored and lead a 5-person team on a fast-paced project, including meeting with customers, listening and getting feedback from end users, and holding bi-weekly with each member of the team.}
 	     \resumeItem{Testing}
-          {created an integration test framework and user interface for any swagger API, which is now used throughout the company. Gave presentations on different testing techniqutes and built a testing tutorial for new hires.}
+          {created an integration test framework and user interface for any swagger API, which is now used throughout the company. Gave presentations on different testing techniques and built a testing tutorial for new hires.}
       \resumeItemListEnd
 
     \resumeSubheading
       {United States Intelligence Community}{Washington, DC}
       {Software Engineer}{Sept. 2016 - May 2017}
       \resumeItemListStart
-		 \resumeItem{Web Security}
-          {}
+		 \resumeItem{Security}
+          {built architecture for end to end security of high profile web applications, data, and communications. Ensured compliance of cryptography, development, build processes, and deployment with government security standards.}
         \resumeItem{Data Discovery}
-          {}
-        \resumeItem{Interagency Support}
-          {}
+          {built software and web applications to visualize a wide variety of multi-dimensional data in order to make well informed political, strategic, and operational decisions for national security.}
+        \resumeItem{Inter-agency Support}
+          {worked on high-level projects with a variety of  intelligence agencies, law enforcement entities, and foreign intelligence partners.}
 	     \resumeItem{DevOps}
-          {}
+          {assisted in build processes and deployment for large scale applications in high pressure environments. Ensured zero down time through extensive testing and real time reporting.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -125,9 +125,9 @@
       {Data Scientist Intern}{May 2016 - Sept. 2016}
       \resumeItemListStart
         \resumeItem{Data Visualization}
-          {}
+          {performed statistical analysis on correlations between immigration and security in the US. Created graphs and info graphics showing trends immigration and security.}
         \resumeItem{Arabic}
-          {}
+          {read and analyzed Arabic texts, including newspaper articles, academic journals, and online blogs to get a better understanding of migration trends in Arabic-speaking populations.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -135,9 +135,9 @@
       {Intern}{May 2015 - Aug. 2015}
       \resumeItemListStart
         \resumeItem{Research}
-          {}
+          {performed thoughtful and careful research on migration crises throughout the Middle East, which were used in the creation of official US foreign policy.}
         \resumeItem{Communication}
-          {}
+          {assisted deputy directors and ambassadors in high-level meetings, including taking notes and writing meeting summaries. Wrote official correspondence with NGOs working in Yemen, Syria, and Palestine.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -157,13 +157,13 @@
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{Synonym Grapher}
-      {}
+      {recursively crawls synonyms in a given language and depth to create a sprawling graph.}
     \resumeSubItem{Password Manager}
-      {}
+      {an end to end encrypted password manager server, database, and user interface.}
     \resumeSubItem{Midi Sonification}
-      {}
-    \resumeSubItem{TDD Tutorial}
-      {}
+      {A server which takes in an array of data, key, and time signature, and outputs a 'song' of that data in the MIDI format.}
+    \resumeSubItem{Website Analytics}
+      {A server and user interface for monitoring traffic on my personal website.}
   \resumeSubHeadingListEnd
 
 \end{document}
