@@ -74,7 +74,7 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://davidcharlesgoldstein.com/?resume1-21-19}{\Large David Goldstein}} & \href{mailto:dgoldstein01@gmail.com}{dgoldstein01@gmail.com}\\
+  \textbf{\href{http://davidcharlesgoldstein.com/?resume-11-8-19}{\Large David Goldstein}} & \href{mailto:dgoldstein01@gmail.com}{dgoldstein01@gmail.com}\\
   \href{http://davidcharlesgoldstein.com/?resume1-21-19}{http://www.davidcharlesgoldstein.com} & 520 E Main Street Charlottesville, VA 22902 \\
 \end{tabular*}
 
@@ -96,15 +96,16 @@
       {Decipher Technology Studios}{Alexandria, VA}
       {Software Engineer}{May 2017 - Present}
       \resumeItemListStart
-        \resumeItem{Microservices}
-          {built individual ``building block" services focusing on doing specific tasks well, giving our system architecture flexibility and support, and also decreasing unplanned downtime and server maintenance costs. }
-        \resumeItem{Performance}
-          {lead efforts to optimize and test load times with web-based applications, data aggregation, and database retrieval.}
-        \resumeItem{Leadership}
-          {mentored and lead a 5-person team on a fast-paced project, including meeting with customers, listening and getting feedback from end users, and holding bi-weekly with each member of the team.}
-	     \resumeItem{Testing}
-          {created an integration test framework and user interface for any swagger API, which is now used throughout the company. Gave presentations on different testing techniques and built a testing tutorial for new hires.}
+        \resumeItem{Greymatter}
+          {work on a close-knit team in R\&D to develop production-grade infrastructure to run, manage, and scale microservices, as well as provide easy integration for AI ops, secure data storage, and system-wide debugging.}
+        \resumeItem{DevOps}
+          {lead efforts to optimize deployment infrastructure with helm, create development environments for others to test k8 deployments, and assist customers in hands on challenges and situations.}
+        \resumeItem{Development}
+          {write, manage, and maintain code across a multitude of repositories and throughout the full stack in languages including Golang, Python, Javascript, C++, and Shell.}
+	     \resumeItem{Education}
+          {create and give company-wide presentations on a multitude of topics in tech including Prometheus, methods in integration and unit testing, and advanced techniques in Git branching and debugging.}
       \resumeItemListEnd
+      
 
     \resumeSubheading
       {United States Intelligence Community}{Washington, DC}
@@ -148,22 +149,22 @@
   	\resumeSubItem{Spoken Languages}
       {French (2/2), Arabic (2/2), Spanish (1/1), Hebrew (+/+)}
   	\resumeSubItem{Programming Languages}
-      {Python, Go, Javascript, CSS, Typescript, C, C++, Bash, Java, SQL, R }
+      {Python, Golang, SQL, Javascript, CSS, Typescript, C, C++, Bash, Java, SQL, R }
   	\resumeSubItem{Technologies}
-      {React, Angular, View.js, MognoDB, AWS (S3, Rekognition, Lambda, EC2), Elastic Search, Docker, Kafka, ZooKeeper, Kubernetes, OpenShift}            
+      {Helm, React, Angular, View.js,  MognoDB, AWS (S3, rekognition, Lambda, ec2, eks, elb), Elastic Search, Docker, Kafka, ZooKeeper, gke, OpenShift, openssl, http, websockets, grpc, server-side events} 
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Synonym Grapher}
-      {recursively crawls synonyms in a given language and depth to create a sprawling graph.}
-    \resumeSubItem{Password Manager}
-      {an end to end encrypted password manager server, database, and user interface.}
-    \resumeSubItem{Midi Sonification}
-      {A server which takes in an array of data, key, and time signature, and outputs a 'song' of that data in the MIDI format.}
-    \resumeSubItem{Website Analytics}
-      {A server and user interface for monitoring traffic on my personal website.}
+    \resumeSubItem{\href{https://github.com/dgoldstein1/graphApi}{BigGraphDB}}
+      {High-performance and ultra-lightweight graphing database based on \href{https://snap.stanford.edu}{research out of Standford}.}
+    \resumeSubItem{\href{https://github.com/dgoldstein1/integration-test-generator}{Integration Test Generator}}
+      {Create comprehensive and adaptable integration tests from a swagger definition.}
+    \resumeSubItem{\href{https://github.com/dgoldstein1/twoWayKeyValue}{TwoWayKV DB}}
+      {Ultra lean two-way KV API for fast two-way lookups, searching, and data export.}
+    \resumeSubItem{\href{https://github.com/dgoldstein1/Sheepshead}{Sheepshead}}
+      {Family card game written in Java and Spring.}
   \resumeSubHeadingListEnd
 
 \end{document}
