@@ -49,6 +49,12 @@
   }
 }
 
+\newcommand{\resumeItemNoColon}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -57,7 +63,9 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItemNoColon}[1]{\resumeItemNoColon{#1}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -87,7 +95,7 @@
       {Bachelor of Arts; Majors: Computer Science, Arabic, International Studies; GPA: 3.80}{Sept. 2012 -- May 2016}
     \resumeSubheading
       {American University of Sharjah}{Sharjah, UAE}
-      {Junior year study abroad; Arabic and Computer Science Program}{Fall 2015}
+      {Study Abroad: Arabic and Computer Science Program}{Fall 2015}
   \resumeSubHeadingListEnd
 
 
@@ -113,7 +121,7 @@
      \resumeItem{Brief}
           {Developer on platform service for Intelligence Analysts giving presentations}
      \resumeItem{Research}
-          {Assist in research of faculty at the National Intelligence University on immigration of Arabic-speaking populations}          
+          {Conduct research with faculty at the National Intelligence University on immigration of Arabic-speaking populations}          
       \resumeItemListEnd
 
     \resumeSubheading
@@ -123,7 +131,7 @@
         \resumeItem{Research}
           {Report on migrations throughout the Middle East for the creation of US foreign policy}
         \resumeItem{Finance}
-          {Assist in disbursement of US funding to NGOs in the Middle East}
+          {Oversee disbursement of US funding to NGOs in the Middle East}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -132,7 +140,7 @@
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{linklanguageconnections.com}
-      {Website drawing paths between different data sets (e.g.: wikipedia articles, Arabic synonyms) using the Standford Network Analysis Project and networkx}
+      {Website drawing paths between different data sets (e.g.: Wikipedia articles, Arabic synonyms) using the Standford Network Analysis Project and Networkx}
     \resumeSubItem{Housing Hub}
       {Website connecting people without housing to local housing organizations and housing vouchers as part of Code for Charlottesville, VA}      
     \resumeSubItem{Multi-threaded Crawler}
@@ -144,9 +152,9 @@
 %-----------Interests -----------------
 \section{Interests}
   \resumeSubHeadingListStart
-    \resumeSubItem{Network Science}{efficiency, centrality, clustering, social networking, language mapping, other interdisciplinary networks  }
+    \resumeSubItem{Network Science}{efficiency, centrality, clustering, social networking, language mapping, other interdisciplinary networks}
     \resumeSubItem{Security}{zero trust, authentication, JWT, Spiffe-Spire, circuit breaking}
-    \resumeSubItem{Coding as a Public Service}{Code for America, open APIs, public data}
+    \resumeSubItem{Coding for Good}{Code for America, open APIs, public data, CS tutoring}
   \resumeSubHeadingListEnd
 
 %--------SKILLS------------
@@ -155,9 +163,13 @@
     \resumeSubItem{Spoken Languages}
       {French (2/2), Arabic (2/2), Spanish (1/1), Hebrew (+/+)}
     \resumeSubItem{Programming Languages}
-      {Python, Golang, SQL, Javascript, CSS, Typescript, C, C++, Bash, Java, SQL, R, and more! }
+      {Python, Golang, Javascript, CSS, Node/Typescript, C, C++, Bash, Java, SQL, R, Skylark, ASM }
     \resumeSubItem{Technologies}
-      {Helm, React, Angular, View.js,  MongoDB, sql, Elastic Search, Docker, Kafka, ZooKeeper, aws, gke, OpenShift, openssl, http, websockets, grpc, server-side events} 
+      {Helm, Elastic Search, Docker, Kafka, ZooKeeper, aws, gke, OpenShift, openssl, http/https, SSE, websockets, grpc, React, Angular, View.js,  MongoDB, postgres/sql, Bazel, CI/CD, systemD } 
   \resumeSubHeadingListEnd
   
+\section{Hobbies}
+    \resumeSubHeadingListStart
+        \resumeSubItemNoColon{Trail running, choir, piano, and baking}
+    \resumeSubHeadingListEnd
 \end{document}
