@@ -4,6 +4,17 @@ A single-page, one-column resume for software developers. It uses the base latex
 
 ### Build
 
+Generate PDF:
+
+```bash
+latexmk -pdf -f -g -bibtex -deps -synctex=1 -interaction=nonstopmode  david_goldstein.tex
+```
+
+Generate PNG:
+
+```bash
+magick -density 300 resume.pdf -flatten -quality 90 resume_preview.png
+```
 
 
 ### Motivation
