@@ -45,7 +45,19 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{: #2 \vspace{0pt}}
+  }
+}
+
+\newcommand{\resumeSubItemWithoutTitle}[1]{
+  \item\small{
+    \textbf{#1}
+  }
+}
+
+\newcommand{\resumeItemSub}[2]{
+  \item\small{
+    {#1}{: #2 \vspace{4pt}}
   }
 }
 
@@ -60,7 +72,7 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{0pt}
 }
 
 
@@ -82,8 +94,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://davidcharlesgoldstein.com/?resume-8-22-21}{\Large David Goldstein}} & \href{mailto:DGoldstein01@gmail.com}{DGoldstein01@gmail.com}\\
-  \href{http://davidcharlesgoldstein.com/?resume-8-22-21}{http://www.DavidCharlesGoldstein.com} & 617-543-0274 \\
+  {\Large David Goldstein} \href{mailto:DGoldstein01@gmail.com}{DGoldstein01@gmail.com}\\
+  {617-543-0274} \\
 \end{tabular*}
 
 
@@ -91,7 +103,7 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Macalester College}{Saint Paul, Minnesota}
+      {Macalester College}{Saint Paul, MN}
       {Bachelor of Arts; Majors: Computer Science, Arabic, International Studies; GPA: 3.80}{Sept. 2012 -- May 2016}
   \resumeSubHeadingListEnd
 
@@ -101,22 +113,40 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
+      {Target}{Minneapolis, MN}
+      {Lead Software Engineer}{October 2021 - Present}
+      \resumeItemListStart
+        \resumeSubItemWithoutTitle{Virtual Machine Management}
+        \resumeItemListStart
+          \resumeItemSub{Virtual Machine Platform} {todo}
+          \resumeItemSub{Persistent Disks} {todo}
+        \resumeItemListEnd
+        \resumeSubItemWithoutTitle{Hybrid Cloud}
+        \resumeItemListStart
+          \resumeItemSub{Virtual Machine Platform} {todo}
+          \resumeItemSub{Open Policy Agent} {todo}
+        \resumeItemListEnd
+
+        \resumeSubItemWithoutTitle{Stores}
+        \resumeItemListStart
+          \resumeItemSub{Secrets Access} {todo}
+          \resumeItemSub{Sidecar Monitoring and Obserability} {todo}
+        \resumeItemListEnd
+
+
+
+      \resumeItemListEnd
+
+    \resumeSubheading
       {Greymatter.io}{Washington, DC}
-      {Lead Software Engineer}{May 2019 - Present}
+      {Lead Software Engineer}{May 2019 - October 2021}
       \resumeItemListStart
         \resumeItem{Keycloak}
-          {Plan and lead development for OIDC integration for enterprises with 1,000+ services}    
+          {Plan and lead development for OIDC integration for enterprises with 1,000+ applications}
         \resumeItem{Object Drive}
           {Lead a team of four developers on object-storage platform with 20,000+ users}
         \resumeItem{Covidapihub.io}
           {Lead a team of five to develop and deploy website hosting covid-19 data}
-      \resumeItemListEnd
-    
-
-    \resumeSubheading
-      {Greymatter.io}{Washington, DC}
-      {Software Engineer}{May 2017 - May 2019}
-      \resumeItemListStart
         \resumeItem{API Development}
           {Developed RESTful APIs used in leading service mesh framework}
         \resumeItem{Observability}
@@ -124,7 +154,6 @@
         \resumeItem{Kubernetes}
           {Build, test, and deploy customer environments into AWS, Azure, and Openshift}
       \resumeItemListEnd
-      
 
     \resumeSubheading
       {Defense Intelligence Agency}{Washington, DC}
@@ -138,7 +167,7 @@
 
     \resumeSubheading
       {National Intelligence University - School of Science and Technology}{Washington, DC}
-      {Intern}{May 2016 - Sept. 2016}
+      {Intern}{Summer 2016}
       \resumeItemListStart
         \resumeItem{Research}
           {Report on scientific advancements for the creation of US foreign policy}
@@ -146,19 +175,16 @@
           {Assist professors in management of course schedule and classroom}
       \resumeItemListEnd
 
-  \resumeSubHeadingListEnd
+    \resumeSubheading
+      {US Department of State - Bureau of Populations, Migration, and Refugees}{Washington, DC}
+      {Intern}{Summer 2015}
+      \resumeItemListStart
+        \resumeItem{Research}
+          {todo}
+        \resumeItem{Administration}
+          {todo}
+      \resumeItemListEnd
 
-%-----------PROJECTS -----------------
-\section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{LinkLanguageConnections.com}
-      {Website drawing paths between different data sets (e.g.: Wikipedia articles, Arabic synonyms) using the Stanford Network Analysis Project and Networkx}
-    \resumeSubItem{Housing Hub}
-      {Website connecting people without housing to local housing organizations and housing vouchers as part of Code for Charlottesville, VA}      
-    \resumeSubItem{Multi-threaded Crawler}
-      {Performant website crawler for data mining}
-    \resumeSubItem{Website Visit Tracker}
-      {Geo-IP tracker of visitors to my personal website}
   \resumeSubHeadingListEnd
 
 %--------QUALIFICATIONS------------
@@ -170,25 +196,6 @@
       {Active government clearance}
   \resumeSubHeadingListEnd
 
-%-----------Interests -----------------
-\section{Interests}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Network Science}{efficiency, centrality, clustering, social networking, language mapping, other interdisciplinary networks}
-    \resumeSubItem{Security}{zero trust, authentication, JWT, Spiffe-Spire, circuit breaking}
-    \resumeSubItem{Coding for Good}{Code for America, open APIs, public data, Computer Science tutoring}
-  \resumeSubHeadingListEnd
-
-
-%--------SKILLS------------
-\section{Skills}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Spoken Languages}
-      {French (2/2), Arabic (2/2), Spanish (1/1), Hebrew (+/+)}
-    \resumeSubItem{Programming Languages}
-      {Python, Golang, Javascript, CSS, Node.js, Typescript, C, C++, Bash, Java, SQL, GraphQL, R, Skylark, ASM }
-    \resumeSubItem{Technologies}
-      {AWS, Openshift, Azure, GKE, Helm Chars, Elastic Search, Docker, Kafka, ZooKeeper, OpenShift, openssl, internet protocols, SSE, websockets, grpc, React, Angular, View.js,  MongoDB, postgres/sql, Bazel, CI/CD, systemD } 
-  \resumeSubHeadingListEnd
   
 \section{Hobbies}
     \resumeSubHeadingListStart
