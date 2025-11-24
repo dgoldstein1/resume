@@ -94,7 +94,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  {\Large David Goldstein} \href{mailto:DGoldstein01@gmail.com}{DGoldstein01@gmail.com}\\
+  {\Large David Goldstein} \\ \\
+  \href{mailto:dgoldstein01@gmail.com}{dgoldstein01@gmail.com}\\
   {617-543-0274} \\
 \end{tabular*}
 
@@ -116,43 +117,53 @@
       {Target}{Minneapolis, MN}
       {Lead Software Engineer}{October 2021 - Present}
       \resumeItemListStart
+        \resumeSubItemWithoutTitle{Developer Tooling}
+        \resumeItemListStart
+          \resumeItemSub{Github Actions}{Design and implement common VM architecture running Github Actions workers across GCP, VMWare, and Target's datacenter.}
+          \resumeItemSub{Write Ahead Log KV}{Spearhead developement and architecture of Redis-driven Secret Provider for store workloads, now used in all 2000 stores and in HQ.}
+          \resumeItemSub{Sidecar Monitoring and Obserability}{Drive initiative to rewrite sidecar tooling to support both GKE and Open Container runtimes, used in 100k+ workloads across Target's Datacenter and stores.}
+        \resumeItemListEnd
         \resumeSubItemWithoutTitle{Virtual Machine Management}
         \resumeItemListStart
-          \resumeItemSub{Virtual Machine Platform} {todo}
-          \resumeItemSub{Persistent Disks} {todo}
+          \resumeItemSub{Persistent Disks}{Design and implement architecture to support local and network storage in support of Target Kuburnetes Engine.}
+          \resumeItemSub{Placement Engine}{Redesign and optimize placement engine for VMs across Target's datacenter taking into account anti-affinity rules, resource availability, and user-driven constraints.}
         \resumeItemListEnd
         \resumeSubItemWithoutTitle{Hybrid Cloud}
         \resumeItemListStart
-          \resumeItemSub{Virtual Machine Platform} {todo}
-          \resumeItemSub{Open Policy Agent} {todo}
+          \resumeItemSub{Compute Platform}{Lead Hybrid Cloud efforts to interface multiple compute providers (GCP, VMWare, internal Target) with one common API for use across Target.}
+          \resumeItemSub{Workflow Management}{Architect and implement workflow orchestrator to significantly reduce complexity in management and debugging of operations across Cloud Providers.}
+          \resumeItemSub{Open Policy Agent}{Drive and implement Target's enterprise-level OPA policies and rules from the ground up.}
         \resumeItemListEnd
-
-        \resumeSubItemWithoutTitle{Stores}
-        \resumeItemListStart
-          \resumeItemSub{Secrets Access} {todo}
-          \resumeItemSub{Sidecar Monitoring and Obserability} {todo}
-        \resumeItemListEnd
-
-
-
       \resumeItemListEnd
 
     \resumeSubheading
       {Greymatter.io}{Washington, DC}
       {Lead Software Engineer}{May 2019 - October 2021}
       \resumeItemListStart
-        \resumeItem{Keycloak}
-          {Plan and lead development for OIDC integration for enterprises with 1,000+ applications}
-        \resumeItem{Object Drive}
-          {Lead a team of four developers on object-storage platform with 20,000+ users}
-        \resumeItem{Covidapihub.io}
-          {Lead a team of five to develop and deploy website hosting covid-19 data}
-        \resumeItem{API Development}
-          {Developed RESTful APIs used in leading service mesh framework}
-        \resumeItem{Observability}
-          {Develop metric system for measuring API performance in distributed environments}
-        \resumeItem{Kubernetes}
-          {Build, test, and deploy customer environments into AWS, Azure, and Openshift}
+
+        \resumeSubItemWithoutTitle{Service Mesh}
+        \resumeItemListStart
+          \resumeItemSub{Authorization}{Drive architecture for zero-trust authentication and authorization at the L4 and L7 layers across Government and Commercial spaces.}
+          \resumeItemSub{Machine Identity}{Core developer on integrating Spiffe/Spire as an out of the box machine-identity provider in distributed service meshes.}
+          \resumeItemSub{Open Policy Agent}{Lead development on enabling OPA authorization for external OIDC providers in Hybrid Cloud evironments.}
+          \resumeItemSub{Monitoring and Obserability}{Implement distributed metrics and alerting schemas for service meshes with 20k+ workloads.}
+          \resumeItemSub{Customer Relations}{Serve as a primary techincal contact for the Department of Homeland Security, US Southern Command, and the Defense Intelligence Agency to intstall, operate, and upgrade Service Meshes.}
+        \resumeItemListEnd
+
+
+
+%        \resumeItem{Keycloak}
+%          {Plan and lead development for OIDC integration for enterprises with 1,000+ applications}
+%        \resumeItem{Object Drive}
+%          {Lead a team of four developers on object-storage platform with 20,000+ users}
+%        \resumeItem{Covidapihub.io}
+%          {Lead a team of five to develop and deploy website hosting covid-19 data}
+%        \resumeItem{API Development}
+%          {Developed RESTful APIs used in leading service mesh framework}
+%        \resumeItem{Observability}
+%          {Develop metric system for measuring API performance in distributed environments}
+%        \resumeItem{Kubernetes}
+%          {Build, test, and deploy customer environments into AWS, Azure, and Openshift}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -160,9 +171,9 @@
       {Software Engineer}{Sept. 2016 - May 2017}
       \resumeItemListStart
      \resumeItem{Brief}
-          {Develop application using Angular, RESTful APIs, and SQL database for senior military leaders}
+          {Develop end-to-end military capacity planning application for military leaders, including DIA senior leadership and the Joint Chiefs of Staff.}
      \resumeItem{Research}
-          {Develop and perform database migrations and updates for very sensitive data}
+          {Develop and perform database migrations and updates for highly sensitive data.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -170,9 +181,9 @@
       {Intern}{Summer 2016}
       \resumeItemListStart
         \resumeItem{Research}
-          {Report on scientific advancements for the creation of US foreign policy}
+          {Report on scientific advancements for the creation of US foreign policy.}
         \resumeItem{Administration}
-          {Assist professors in management of course schedule and classroom}
+          {Assist professors in management of course schedule and classroom.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -180,9 +191,9 @@
       {Intern}{Summer 2015}
       \resumeItemListStart
         \resumeItem{Research}
-          {todo}
+          {Report on key foreign-policy issues relating to migration in the Middle East.}
         \resumeItem{Administration}
-          {todo}
+          {Take meeting notes for high-level US Government meetings, send memos, assist in document production.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -191,14 +202,14 @@
 \section{Qualifications}
   \resumeSubHeadingListStart
     \resumeSubItem{CSM}
-      {Certified Scrum Master with Scrum Alliance} 
+      {Certified Scrum Master with Scrum Alliance (2021)}
     \resumeSubItem{Top Secret-SCI}
-      {Active government clearance}
+      {Government clearance (2018)}
   \resumeSubHeadingListEnd
 
   
 \section{Hobbies}
     \resumeSubHeadingListStart
-        \resumeSubItemNoColon{Trail running, canoeing, nature, choir, piano, and baking}
+        \resumeSubItemNoColon{Trail running, canoeing, XC Skiing}
     \resumeSubHeadingListEnd
 \end{document}
