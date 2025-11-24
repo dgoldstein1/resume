@@ -13,7 +13,8 @@ latexmk -pdf -f -g -bibtex -deps -synctex=1 -interaction=nonstopmode  david_gold
 Generate PNG:
 
 ```bash
-magick -density 300 david_goldstein.pdf -flatten -quality 90 resume_preview.png
+magick -density 300 david_goldstein.pdf -quality 90 resume_preview.png
+magick resume_preview-* +append resume_preview.png
 ```
 
 
